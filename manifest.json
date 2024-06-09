@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Web Annotator",
+  "version": "1.0",
+  "description": "Annotate webpages with colorful highlights and sticky notes.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+  "16": "icon.png",
+  "48": "icon.png",
+  "128": "icon.png"
+},
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "commands": {
+    "start_annotating": {
+      "suggested_key": {
+        "default": "Ctrl+B"
+      },
+      "description": "Start Annotating"
+    },
+    "next_annotation": {
+      "suggested_key": {
+        "default": "Ctrl+M"
+      },
+      "description": "Go to the next marked annotation"
+    },
+    "previous_annotation": {
+      "suggested_key": {
+        "default": "Ctrl+D"
+      },
+      "description": "Go to the previous marked annotation"
+    }
+  }
+}

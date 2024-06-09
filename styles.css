@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container {
+  padding: 10px;
+}
+
+h2, h3 {
+  margin: 10px 0;
+}
+
+button, input, select {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+#searchResults {
+  margin-top: 10px;
+}
+
+.search-result {
+  padding: 10px;
+  border: 1px solid #000000;
+  margin: 5px 0;
+  background-color: #fffcfd;
+  word-wrap: break-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  button, input, select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .search-result {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
