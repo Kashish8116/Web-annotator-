@@ -33,7 +33,7 @@ A Chrome extension for Annotating on a webpage with feature of highlight text an
 - Use `Ctrl+B` to start annotating.
 - Use `Ctrl+M` to Go to the next marked annotation.
 - Use `Ctrl+D` to Go to the previous marked annotation.
-- Use the extension popup to download annotations as PDF.
+
 
 ## License
 
